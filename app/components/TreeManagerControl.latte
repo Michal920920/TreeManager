@@ -1,0 +1,35 @@
+{snippet wholeList}
+<input type="number" id="addpid" placeholder="PID"><br>
+	    <input type="button" value="Add" id="add" data-link="{link add!}"><br>
+                <br>
+		<input type="number" id="removeid" placeholder="ID" data-link="{link remove!}"><br>
+	    <input type="button" value="Remove" id="remove">
+    {if $tree} 
+
+         {snippet tree}	    
+        <div class="table">
+        {var $previousLvl}       
+        {foreach $tree as $key => $value}
+            {if $value[lvl] == $previousLvl}
+                
+                 <div class='cell' id="{$value[id]}" style="background-color:{$value[color]|noescape}">id: {$value[id]} pid: {$value[pid]}</div>
+                 
+            {elseif !$previousLvl}
+                   
+                <div class='row'>
+                    <div class='cell' id="{$value[id]}" style="background-color:{$value[color]|noescape}">id: {$value[id]} pid: {$value[pid]}</div>
+                    
+            {elseif $value[lvl] != $previousLvl}
+                
+                 </div>
+                 <div class='row'>
+                 <div class='cell' id="{$value[id]}" style="background-color:{$value[color]|noescape}">id: {$value[id]} pid: {$value[pid]}</div>
+            {/if}
+            
+            {var $previousLvl = $value[lvl]}
+        {/foreach}
+        </div>
+        
+    {/snippet}
+    {/if}
+{/snippet}

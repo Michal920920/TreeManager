@@ -1,0 +1,261 @@
+body {
+	background:url('/images/layout/background_stripes.png')center top no-repeat fixed;
+	font-family: CenturyGothic;
+	min-width: 960px;
+	font-size: 14px;
+	width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+@media screen and (max-width: 700px){
+  body {
+    min-width: unset;
+    width: 682px;
+    }
+}
+header {
+    background: url('/images/layout/menu_bar.png') repeat;
+    height: 75px;
+}
+@media screen and (max-width: 700px){
+  header {
+    width: 682px;
+    }
+}
+nav{
+max-width: 1100px;
+    height: 75px;
+    display: block;
+    margin: 0px 220px;
+}
+
+@media screen and (max-width: 700px){
+  nav {
+    width: 672px;
+    }
+}
+nav ul {
+    margin: auto;
+    width: 1100px;
+    height: 30px;
+    padding-top: 26px;
+    list-style-type: none;
+    font-size: 24px;
+    position: relative;
+    left: -26px;
+}
+@media screen and (max-width: 1000px){
+  nav ul {     
+    width: 975px;
+    height: 55px;
+    font-size: 23px;
+    position: relative;
+    left: -95px;
+    }
+}
+@media screen and (max-width: 700px){
+  nav ul {     
+    width: 625px;
+    height: 55px;
+    font-size: 22px;
+    position: absolute;
+    left: -54px;
+    }
+}
+nav li {
+    font-family: CenturyGothic;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.table{
+ 	margin: 15px 80px;
+}
+@media screen and (max-width: 1000px){
+  .table {     
+    margin: 15px 30px;
+      }
+}
+@media screen and (max-width: 700px){
+  .table {     
+    margin: 15px -20px;
+      }
+}
+/*.row{
+	width: 700px;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+@media screen and (max-width: 700px){
+  .row {     
+    width: 600px;
+      }
+}*/
+.cell{
+	    width: 70px;
+    border: solid 1px black;
+    text-align: center;
+    -webkit-box-flex: 1;
+}
+
+#addpid{
+	position: relative;
+    top: 0px;
+    margin: 10px 0px;
+}
+#removeid{
+	margin: 10px 0px;
+}
+#addError{
+	background-color: #ffcccc;
+    width: 159px;
+    height: 18px;
+    border: #c28c8c solid 1px;
+    border-bottom: 0pc;
+    border-radius: 3px 3px 0px 0px;
+    text-align: center;
+    font-size: 13px;
+    color: #690000;
+    position: absolute;
+    top: 244px;
+}
+#removeError{
+	background-color: #ffcccc;
+    width: 159px;
+    height: 18px;
+    border: #c28c8c solid 1px;
+    border-bottom: 0pc;
+    border-radius: 3px 3px 0px 0px;
+    text-align: center;
+    font-size: 13px;
+    color: #690000;
+    position: absolute;
+    top: 326px;
+}
+#login{
+    /*background: #e2e2e2;*/
+    width: 95px;
+    height: 25px;
+    position: relative;
+    color: #1f991f;
+    left: 440px;
+    text-align: center;
+    padding-top: 7px;
+    display: block;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1000px){
+  #login {     
+    left: 300px;
+      }
+}
+@media screen and (max-width: 700px){
+  #login {     
+    left: 200px;
+      }
+}
+@media screen and (min-width: 1000px){
+  #logo {     
+    background: url('/images/layout/woll_ball.png')no-repeat;
+    width: 143px;
+    height: 125px;
+    margin: -13px -61px 0px 0px;
+    float: left;
+    position: relative;
+    left: -41px;
+      }
+}
+.center{
+    display: block;
+    margin: 0 auto;
+}
+.divide{
+	background:url('/images/layout/divide.png')no-repeat;
+	margin-top: 4px;
+	height: 25px;
+	width: 3px;
+	float: left;
+}
+@media screen and (max-width: 700px){
+  .divide {     
+    margin-top: 3px;
+    height: 22px;
+    }
+}
+#extraLight{
+	font-family: AristotelicaExtraLight;
+}
+@font-face
+{
+        font-family: AristotelicaRegular;
+        src: url('/fonts/Aristotelica/Aristotelica-Display-Regular-trial.ttf')
+}
+@font-face
+{
+        font-family: AristotelicaLight;
+        src: url('/fonts/Aristotelica/Aristotelica-Display-Light-trial.ttf')
+}
+@font-face
+{
+        font-family: AristotelicaExtraLight;
+        src: url('/fonts/Aristotelica/Aristotelica-Display-ExtraLight-trial.ttf')
+}
+@font-face
+{
+        font-family: CenturyGothic;
+        src: url('/fonts/CenturyGothic/GOTHIC.TTF')
+}
+.page{
+	background-color: #ececec;
+    width: 960px;
+    min-height: 600px;
+    display: block;
+    margin: 0 auto;
+   
+}
+@media screen and (max-width: 1000px){
+  .page {     
+	width: 860px;
+    }
+}
+@media screen and (max-width: 700px){
+  .page {     
+	width: 660px;
+    margin: 0px;
+    }
+}
+.page-title{
+    background: #fff;
+    text-align: left;
+    font-size: 30px;
+    display: block;
+    padding: 40px;
+}
+.page-content{
+    display: block;
+    padding: 30px;
+}
+@media screen and (max-width: 700px){
+  .page-content {
+     width: 600px;
+    }
+}
+nav a {
+	color: white;
+	text-decoration: none;
+	border: none;
+	
+}
+
+article {
+	text-shadow: 3px 3px 3px #aaaaaa;
+}
+nav a:hover {
+	color: #ececec;
+}
+.clear {
+        clear: both;
+}
